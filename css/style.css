@@ -1,0 +1,17 @@
+
+.textareaWidthResize {
+    width: 100%;
+    resize: none;
+    font-size: 15px;
+}
+#showMobileView {
+    display: none;
+}
+@media only screen and (max-width: 787px) {
+    #checkPCview {
+        display: none;
+    }
+    #showMobileView {
+        display: block;
+    }
+}

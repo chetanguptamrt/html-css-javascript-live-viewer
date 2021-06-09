@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Live Viewer</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="./css/bootstrap.min.css" >
+        <link rel="stylesheet" href="./css/style.css" >
+        <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="./js/bootstrap.min.js" ></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark justify-content">
+            <a class="navbar-brand" href="./index.html">Live Viewer</a>
+            <a class="btn btn-outline-light" href="https://github.com/chetanguptamrt/html-css-javascript-live-viewer" target="_blank">Source Code</a>
+        </nav>
+        <div id="checkPCview">
+            <div class="container-fluid">
+                <div class="row" id="allTextareaHideShow">
+                    <div class="col-md-4 p-1">
+                        <textarea spellcheck="false" id="textareaWidthResize1" class="textareaWidthResize" rows="10" placeholder="Write HTML code here..." id="htmlCode" ></textarea>
+                    </div>
+                    <div class="col-md-4 p-1">
+                        <textarea spellcheck="false" id="textareaWidthResize2" class="textareaWidthResize" rows="10" placeholder="Write CSS code here..." id="cssCode" ></textarea>
+                    </div>
+                    <div class="col-md-4 p-1">
+                        <textarea spellcheck="false" id="textareaWidthResize3" class="textareaWidthResize" rows="10" placeholder="Write JavaScript code here..." id="jsCode" ></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="bg-dark col-12 text-light pt-1 pb-1">
+                        <div style="float: left;">
+                            <button class="btn btn-success btn-sm mr-2" onclick="runTextViewer()">Run ></button>
+                            <button class="btn btn-primary btn-sm mr-5" onclick="resetTextViewer()">Reset</button>
+                            <label>You can also use Bootstrap 4.6 and jquery-3.4.1</label>
+                        </div>
+                        <div style="float: right;">
+                            <button class="btn btn-info btn-sm" id="changeUpperButton" onclick="hideTextArea()">^</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <style id="livePreviewCSS"></style>
+                <div id="livePreviewHTML" ></div>
+                <script id="livePreviewJavaScript"></script>
+            </div>
+        </div>
+        <div id="showMobileView">
+            <h4 class="text-center mt-5 mb-5">Mobile view are not allowed</h4>
+        </div>
+        <script type="text/javascript" src="./js/script.js" ></script>
+
+    </body>
+</html>
