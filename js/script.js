@@ -90,12 +90,6 @@ $('#textareaWidthResize2').keydown(function(e) {
         var end = this.selectionEnd;
         this.value = this.value.substring(0, start) + "''" + this.value.substring(end);
         this.selectionStart = this.selectionEnd = start +1;
-    } else if(e.key == "<") {
-        e.preventDefault();
-        var start = this.selectionStart;
-        var end = this.selectionEnd;
-        this.value = this.value.substring(0, start) + "<>" + this.value.substring(end);
-        this.selectionStart = this.selectionEnd = start +1;
     }
 });
 $('#textareaWidthResize3').keydown(function(e) {
@@ -140,12 +134,6 @@ $('#textareaWidthResize3').keydown(function(e) {
         var start = this.selectionStart;
         var end = this.selectionEnd;
         this.value = this.value.substring(0, start) + "''" + this.value.substring(end);
-        this.selectionStart = this.selectionEnd = start +1;
-    } else if(e.key == "<") {
-        e.preventDefault();
-        var start = this.selectionStart;
-        var end = this.selectionEnd;
-        this.value = this.value.substring(0, start) + "<>" + this.value.substring(end);
         this.selectionStart = this.selectionEnd = start +1;
     }
 });
